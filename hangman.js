@@ -364,7 +364,7 @@ function render( game )
 		let innerHtml = "<span class='guess'>" + guess + "</span>";
 		document.getElementById("guesses").innerHTML += innerHtml;
 	});
-	document.getElementById("hangmanImage").src = "img/hangman" + game.getIncorrectGuesses() + ".png";
+	document.getElementById("hangmanImage").src = "hangman" + game.getIncorrectGuesses() + ".png";
 
 	let guessBox = document.getElementById('guessBox');
 	if( game.isWon() )
